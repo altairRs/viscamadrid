@@ -7,17 +7,27 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+/* Override Bootstrap container class */
 .container {
-    max-width: 1500px; /* Adjust as needed */
+  max-width: 1760px;
+
 }
 
-img {
-  object-fit: cover; /* Prevents distortion but may crop */
-  object-position: center; /* Centers the image */
+body .container {
+  max-width: 1760px !important;
+}
+
+.hero-banner {
+  position: relative;
   width: 100%;
-  height: 100%; /* If using a container with set dimensions */
+  height: 100vh; /* Makes the banner take up the full height of the viewport */
+  overflow: hidden; /* Ensures no content overflows */
 }
 
+
+.card-img-top {
+  border-radius: 15px; /* You can adjust this value */
+}
 
 
 .card-title {
@@ -37,58 +47,18 @@ footer a:hover {
     color: #007bff;
 }
 
-/* store */
+.custom-border-radius {
+  border-radius: 25px; /* Adjust the value to your desired radius */
+}
 
-.hero-banner {
-    background-image: url('images/hero-banner.jpg');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .store .card {
-    border: 1px solid #ddd;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .store .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  }
-  
-  .store .btn-dark {
-    background-color: #000;
-    border-color: #000;
-  }
-  
-  .store .btn-dark:hover {
-    background-color: #333;
-    border-color: #333;
-  }
-  
-/* tickets */
+.card {
+  border: none; /* Removes border from the card */
+}
 
-.hero-banner {
-    background-image: url('images/tickets-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-  }
-  
-  .card {
-    border: none;
-  }
-  
-  .card img {
-    height: 200px;
-    object-fit: cover;
-  }
 
-/* tour */
+.rm-palmares__list {
+  list-style-type: none; /* Removes the default bullets */
+  padding-left: 0; /* Removes the indentation */
+}
 
-.hero-banner-tour {
-    background-image: url('images/tour-hero.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
-  }
-  
+

@@ -1,0 +1,259 @@
+/* General Body Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1760px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  color: #1c1c1c;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.navbar-nav .nav-link.active {
+  color: #007bff;
+}
+
+.navbar-toggler-icon {
+  background-color: #1c1c1c;
+}
+
+/* Hero Banner Section */
+.hero-banner {
+  background-color: #f0f8ff;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.hero-banner img {
+  border-radius: 25px;
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-banner h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-banner p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.hero-banner .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.hero-banner .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Trending Now Section */
+.trending-now {
+  background-color: #f8f9fa;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.trending-now .btn-outline-primary {
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+.trending-now .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.carousel-item {
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item img {
+  border-radius: 15px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Training Gear Section */
+.training-gear {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.training-gear h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.training-gear p {
+  font-size: 1.125rem;
+  margin-bottom: 30px;
+}
+
+.training-gear .row {
+  display: flex;
+  align-items: center;
+}
+
+.training-gear img {
+  border-radius: 25px;
+}
+
+.training-gear .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.training-gear .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Shop by Player Section */
+.shop-by-player {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f8f9fa;
+}
+
+.shop-by-player h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.shop-by-player .col-md-3 {
+  text-align: center;
+}
+
+.shop-by-player .rounded-circle {
+  border-radius: 50%;
+  border: 5px solid #007bff;
+  transition: transform 0.3s ease;
+}
+
+.shop-by-player .rounded-circle:hover {
+  transform: scale(1.1);
+}
+
+.shop-by-player h5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Best Sellers Section */
+.best-sellers {
+  background-color: #f8f9fa;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.best-sellers h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* General Card Styling */
+.card img {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer Links */
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}

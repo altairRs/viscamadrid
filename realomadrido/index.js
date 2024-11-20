@@ -1,47 +1,155 @@
-
-// Sample data for trophies by year
-const trophiesByYear = {
-    2024: [
-        { count: 15, title: "European Cups" },
-        { count: 8, title: "FIFA Club World Cups" },
-        { count: 36, title: "National Leagues" }
-    ],
-    2020: [
-        { count: 14, title: "European Cups" },
-        { count: 6, title: "FIFA Club World Cups" },
-        { count: 34, title: "National Leagues" }
-    ],
-    2015: [
-        { count: 10, title: "European Cups" },
-        { count: 4, title: "FIFA Club World Cups" },
-        { count: 30, title: "National Leagues" }
-    ]
-    // Add more years and data here
-};
-
-// Function to update achievements based on the selected year
 function updateYearAndAchievements(year) {
-    const selectedYearElement = document.getElementById("selected-year");
-    const achievementsList = document.getElementById("achievements");
+    const trophyData = {
+        1900: [0, 0, 0, 0, 0],
+        1901: [0, 0, 0, 0, 0],
+        1902: [0, 0, 0, 0, 0],
+        1903: [0, 0, 0, 0, 0],
+        1904: [0, 0, 0, 0, 0],
+        1905: [0, 0, 0, 0, 0],
+        1906: [0, 0, 0, 0, 0],
+        1907: [0, 0, 0, 0, 0],
+        1908: [0, 0, 0, 0, 0],
+        1909: [0, 0, 0, 0, 0],
+        1910: [0, 0, 0, 0, 0],
+        1911: [0, 0, 0, 0, 0],
+        1912: [0, 0, 0, 0, 0],
+        1913: [0, 0, 0, 0, 0],
+        1914: [0, 0, 0, 0, 0],
+        1915: [0, 0, 0, 0, 0],
+        1916: [0, 0, 0, 0, 0],
+        1917: [0, 0, 0, 0, 0],
+        1918: [0, 0, 0, 0, 0],
+        1919: [0, 0, 0, 0, 0],
+        1920: [0, 0, 0, 0, 0],
+        1921: [0, 0, 0, 0, 0],
+        1922: [0, 0, 0, 0, 0],
+        1923: [0, 0, 0, 0, 0],
+        1924: [0, 0, 0, 0, 0],
+        1925: [0, 0, 0, 0, 0],
+        1926: [0, 0, 0, 0, 0],
+        1927: [0, 0, 0, 0, 0],
+        1928: [0, 0, 0, 0, 0],
+        1929: [0, 0, 0, 0, 0],
+        1930: [0, 0, 0, 0, 0],
+        1931: [0, 0, 0, 0, 0],
+        1932: [0, 0, 0, 0, 0],
+        1933: [0, 0, 0, 0, 0],
+        1934: [0, 0, 0, 0, 0],
+        1935: [0, 0, 0, 0, 0],
+        1936: [0, 0, 0, 0, 0],
+        1937: [0, 0, 0, 0, 0],
+        1938: [0, 0, 0, 0, 0],
+        1939: [0, 0, 0, 0, 0],
+        1940: [0, 0, 0, 0, 0],
+        1941: [0, 0, 0, 0, 0],
+        1942: [0, 0, 0, 0, 0],
+        1943: [0, 0, 0, 0, 0],
+        1944: [0, 0, 0, 0, 0],
+        1945: [0, 0, 0, 0, 0],
+        1946: [0, 0, 0, 0, 0],
+        1947: [0, 0, 0, 0, 0],
+        1948: [0, 0, 0, 0, 0],
+        1949: [0, 0, 0, 0, 0],
+        1950: [0, 0, 0, 0, 0],
+        1951: [0, 0, 0, 0, 0],
+        1952: [0, 0, 0, 0, 0],
+        1953: [0, 0, 0, 0, 0],
+        1954: [0, 0, 0, 0, 0],
+        1955: [1, 0, 0, 0, 0],
+        1956: [1, 0, 0, 0, 0],
+        1957: [1, 0, 0, 0, 0],
+        1958: [1, 0, 0, 0, 0],
+        1959: [1, 0, 0, 0, 0],
+        1960: [1, 0, 0, 0, 0],
+        1961: [1, 0, 0, 0, 0],
+        1962: [1, 0, 0, 0, 0],
+        1963: [1, 0, 0, 0, 0],
+        1964: [1, 0, 0, 0, 0],
+        1965: [1, 0, 0, 0, 0],
+        1966: [1, 0, 0, 0, 0],
+        1967: [1, 0, 0, 0, 0],
+        1968: [1, 0, 0, 0, 0],
+        1969: [1, 0, 0, 0, 0],
+        1970: [1, 0, 0, 0, 0],
+        1971: [1, 0, 0, 0, 0],
+        1972: [1, 0, 0, 0, 0],
+        1973: [1, 0, 0, 0, 0],
+        1974: [1, 0, 0, 0, 0],
+        1975: [1, 0, 0, 0, 0],
+        1976: [1, 0, 0, 0, 0],
+        1977: [1, 0, 0, 0, 0],
+        1978: [1, 0, 0, 0, 0],
+        1979: [1, 0, 0, 0, 0],
+        1980: [1, 0, 0, 0, 0],
+        1981: [1, 0, 0, 0, 0],
+        1982: [1, 0, 0, 0, 0],
+        1983: [1, 0, 0, 0, 0],
+        1984: [1, 0, 0, 0, 0],
+        1985: [1, 0, 0, 0, 0],
+        1986: [1, 0, 0, 0, 0],
+        1987: [1, 0, 0, 0, 0],
+        1988: [1, 0, 0, 0, 0],
+        1989: [1, 0, 0, 0, 0],
+        1990: [1, 0, 0, 0, 0],
+        1991: [1, 0, 0, 0, 0],
+        1992: [1, 0, 0, 0, 0],
+        1993: [1, 0, 0, 0, 0],
+        1994: [1, 0, 0, 0, 0],
+        1995: [1, 0, 0, 0, 0],
+        1996: [1, 0, 0, 0, 0],
+        1997: [1, 0, 0, 0, 0],
+        1998: [1, 0, 0, 0, 0],
+        1999: [1, 0, 0, 0, 0],
+        2000: [1, 0, 0, 0, 0],
+        2001: [1, 1, 0, 0, 0],
+        2002: [1, 1, 0, 0, 0],
+        2003: [1, 1, 0, 0, 0],
+        2004: [1, 1, 0, 0, 0],
+        2005: [1, 1, 1, 0, 0],
+        2006: [1, 1, 1, 0, 0],
+        2007: [1, 1, 1, 0, 0],
+        2008: [1, 1, 1, 0, 0],
+        2009: [1, 1, 1, 0, 0],
+        2010: [1, 2, 1, 0, 0],
+        2011: [1, 2, 1, 0, 0],
+        2012: [1, 2, 1, 0, 0],
+        2013: [1, 2, 2, 1, 0],
+        2014: [1, 2, 3, 2, 0],
+        2015: [1, 2, 4, 3, 1],
+        2016: [1, 2, 5, 4, 1],
+        2017: [1, 3, 6, 5, 1],
+        2018: [1, 4, 7, 5, 1],
+        2019: [1, 4, 8, 5, 2],
+        2020: [1, 5, 8, 6, 2],
+        2021: [1, 6, 9, 7, 3],
+        2022: [1, 7, 10, 8, 3],
+        2023: [1, 8, 11, 9, 3],
+        2024: [1, 9, 12, 10, 4],
+        2025: [1, 9, 13, 11, 4]
+    };
+    
+   // Retrieve the selected trophy values based on the year
+   const selectedTrophies = trophyData[year] || trophyData[2025]; // Default to 2025 if year is out of range
 
-    // Update the displayed year
-    selectedYearElement.textContent = year;
+   // Update the displayed number of trophies
+   const trophyIds = ['trophy1', 'trophy2', 'trophy3', 'trophy4', 'trophy5'];
+   selectedTrophies.forEach((trophy, index) => {
+       const trophyElement = document.getElementById(trophyIds[index]);
+       if (trophyElement) {
+           trophyElement.textContent = trophy;
+           // Trigger animation (ensure that CSS for 'updating' exists)
+           trophyElement.classList.add('updating');
+           setTimeout(() => {
+               trophyElement.classList.remove('updating');
+           }, 500); // Animation duration
+       }
+   });
 
-    // Update the achievements
-    const achievements = trophiesByYear[year] || [];
-    achievementsList.innerHTML = achievements
-        .map(
-            (trophy) =>
-                `<li class="d-flex align-items-center mb-2">
-                    <span class="icon-trophy text-primary me-2"></span>
-                    <strong class="me-2">${trophy.count}</strong> ${trophy.title}
-                </li>`
-        )
-        .join("");
+   // Update the selected year display
+   const yearDisplay = document.getElementById('selected-year');
+   if (yearDisplay) {
+       yearDisplay.textContent = year;
+   } else {
+       console.log('Year display element not found.');
+   }
 }
-
-// Initialize with the default year
-document.addEventListener("DOMContentLoaded", () => {
-    updateYearAndAchievements(2024);
-});
-

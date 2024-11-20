@@ -1,105 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shop the official 2024/25 Real Madrid jerseys - Home, Away, and Third kits.">
-  <title>Store | Real Madrid Jerseys</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the official 2024/25 Real Madrid merchandise, including jerseys, training gear, and premium gifts.">
+    <title>Store | Real Madrid Official Merchandise</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Real Madrid Fan Site</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="store.html">Store</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Banner -->
-  <section class="hero-banner text-center bg-dark text-white py-5">
-    <div class="container">
-      <h1 class="display-4">2024/25 Real Madrid Jerseys</h1>
-      <p class="lead">Shop the official Home, Away, and Third kits today!</p>
-    </div>
-  </section>
-
-  <!-- Store Section -->
-  <section class="store py-5">
-    <div class="container">
-      <!-- Filters -->
-      <div class="row mb-4">
-        <div class="col-md-3">
-          <h4>Filters</h4>
-          <ul class="list-group">
-            <li class="list-group-item">
-              <input type="checkbox" id="filter-home" class="form-check-input me-2">Home Kit
-            </li>
-            <li class="list-group-item">
-              <input type="checkbox" id="filter-away" class="form-check-input me-2">Away Kit
-            </li>
-            <li class="list-group-item">
-              <input type="checkbox" id="filter-third" class="form-check-input me-2">Third Kit
-            </li>
-          </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.realmadrid.com/favicon.ico" alt="Real Madrid" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-4"><a class="nav-link" href="index.html"><h5><strong>Home</strong></h5></a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#"><h5><strong>Fixtures</strong></h5></a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="store.html"><h5><strong>Store</strong></h5></a></li>
+                    <li class="nav-item mx-4"><a class="nav-link" href="#"><h5><strong>Tour</strong></h5></a></li>
+                </ul>
+                <!-- Right aligned logos -->
+                <div class="d-flex align-items-center">
+                    <a href="https://www.emirates.com" target="_blank" class="mx-2">
+                        <img src="/images/emirates.png" alt="Fly Emirates" width="60" />
+                    </a>
+                    <a href="https://www.adidas.com/us" target="_blank" class="mx-2">
+                        <img src="/images/adidas.png" alt="Adidas" width="60" />
+                    </a>
+                    <a href="login.html" class="btn btn-outline-primary ms-3">Sign In</a>
+                </div>
+            </div>
         </div>
-        <div class="col-md-9">
-          <!-- Grid of Jerseys -->
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card h-100">
-                <img src="images/home-jersey.jpg" class="card-img-top" alt="2024/25 Home Jersey">
-                <div class="card-body text-center">
-                  <h5 class="card-title">2024/25 Home Jersey</h5>
-                  <p class="card-text">$120</p>
-                  <a href="#" class="btn btn-dark w-100">Buy Now</a>
-                </div>
-              </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section style="position: relative; width: 100%; height: 100vh; overflow: hidden;">
+        <img src="/images/christmas.jpeg" alt="Christmas Sweaters" style="width: 100%; height: 100%; object-fit: cover; object-position: center center;"/>
+        <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white;">
+            <h1 class="fw-bold" style="font-size: 3rem; font-weight: bold;">Christmas Sweaters</h1>
+            <p style="font-size: 1.25rem; margin-bottom: 20px;">Celebrate the festive season like a true Madridista.</p>
+            <a href="#" class="btn btn-primary">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Trending Now -->
+    <section class="trending-now py-5 bg-light">
+        <div class="container">
+            <h1 class="fw-bold text-center mb-4"><strong>Trending Now</strong></h1>
+
+            <!-- Switcher Buttons -->
+            <div class="d-flex justify-content-center mb-4">
+                <button class="btn btn-outline-primary me-2" onclick="switchCategory('tracksuits')">Tracksuits</button>
+                <button class="btn btn-outline-primary me-2" onclick="switchCategory('jackets')">Jackets</button>
+                <button class="btn btn-outline-primary" onclick="switchCategory('accessories')">Accessories</button>
             </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="images/away-jersey.jpg" class="card-img-top" alt="2024/25 Away Jersey">
-                <div class="card-body text-center">
-                  <h5 class="card-title">2024/25 Away Jersey</h5>
-                  <p class="card-text">$120</p>
-                  <a href="#" class="btn btn-dark w-100">Buy Now</a>
-                </div>
+
+<!-- Carousel -->
+<div id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <!-- Tracksuits -->
+      <div class="carousel-item tracksuits active">
+          <div class="row g-4">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/menTracksuit.webp" class="card-img-top" alt="Men's Tracksuit">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Men's Training Tracksuit 24/25</h5>
+                          <p class="card-text">$165.00</p>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="images/third-jersey.jpg" class="card-img-top" alt="2024/25 Third Jersey">
-                <div class="card-body text-center">
-                  <h5 class="card-title">2024/25 Third Jersey</h5>
-                  <p class="card-text">$120</p>
-                  <a href="#" class="btn btn-dark w-100">Buy Now</a>
-                </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/youthTracksuit.webp" class="card-img-top" alt="Youth Tracksuit">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Youth Training Tracksuit 24/25</h5>
+                          <p class="card-text">$125.00</p>
+                      </div>
+                  </div>
               </div>
-            </div>
+              <div class="col-md-3">
+                  <div class="card">
+                    <img src="/images/menRMCF.webp" class="card-img-top" alt="Men's RMCF Tracksuit">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Men's RMCF Tracksuit</h5>
+                        <p class="card-text">$115.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                    <img src="/images/youthRMCF.webp" class="card-img-top" alt="Youth RMCF Tracksuit">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Youth RMCF Tracksuit</h5>
+                        <p class="card-text">$100.00</p>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p>&copy; 2024 Real Madrid Fan Site. All Rights Reserved.</p>
+      <!-- Jackets -->
+      <div class="carousel-item jackets d-none">
+          <div class="row g-4">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/jack1.webp" class="card-img-top" alt="Men's RMCF Tracksuit">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Youth Outerwear Padded Jacket Black Real Madrid</h5>
+                          <p class="card-text">$115.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/jack2.webp" class="card-img-top" alt="Youth RMCF Tracksuit">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Youth Outerwear Padded Jacket Color Block Black Real Madrid</h5>
+                          <p class="card-text">$100.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/jack3.webp" class="card-img-top" alt="Men's RMCF Tracksuit 2">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Mens Outerwear Padded Jacket Black Real Madrid</h5>
+                          <p class="card-text">$120.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/jack4.webp" class="card-img-top" alt="Youth RMCF Tracksuit 2">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Mens Outerwear Sherpa Jacket Grey Real Madrid</h5>
+                          <p class="card-text">$105.00</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Accessories -->
+      <div class="carousel-item accessories d-none">
+          <div class="row g-4">
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/acce1.webp" class="card-img-top" alt="Christmas Sweater 1">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Beanie Navy White Straps Real Madrid</h5>
+                          <p class="card-text">$75.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/acce2.webp" class="card-img-top" alt="Christmas Sweater 2">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Winter Gloves Navy Real Madrid</h5>
+                          <p class="card-text">$85.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/acce3.webp" class="card-img-top" alt="Christmas Sweater 3">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Crest Cap Corduroy Brown Real Madrid</h5>
+                          <p class="card-text">$80.00</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3">
+                  <div class="card">
+                      <img src="/images/acce4.webp" class="card-img-top" alt="Christmas Sweater 4">
+                      <div class="card-body text-center">
+                          <h5 class="card-title">Beanie Navy White Straps Real Madrid</h5>
+                          <p class="card-text">$90.00</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#trendingCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#trendingCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- JavaScript -->
+<script>
+  function switchCategory(category) {
+      document.querySelectorAll('.carousel-item').forEach(item => {
+          item.classList.add('d-none');
+      });
+
+      document.querySelectorAll(`.${category}`).forEach(item => {
+          item.classList.remove('d-none');
+      });
+
+      const activeItems = document.querySelectorAll(`.${category}`);
+      if (activeItems.length) {
+          activeItems[0].classList.add('active');
+      }
+  }
+</script>
+
+  
+<!-- Shop by Player -->
+<section id="shopByPlayer" style="background-color: #102341; padding: 40px 0; color: white;">
+  <div class="container">
+      <h2 class="fw-bold text-center mb-4">Shop by Player</h2>
+      <!-- Team Switcher -->
+      <div class="d-flex justify-content-center mb-4">
+          <button class="btn btn-outline-light me-2 active" onclick="switchTeam('mensTeam')">Men's Team</button>
+          <button class="btn btn-outline-light" onclick="switchTeam('womensTeam')">Women's Team</button>
+      </div>
+
+      <!-- Player Carousel -->
+      <div class="player-carousel mensTeam">
+          <div class="d-flex align-items-center">
+              <!-- Left Button -->
+              <button class="btn btn-light btn-sm me-2" onclick="moveCarousel('left', 'mensTeam')">←</button>
+
+              <!-- Carousel Wrapper -->
+              <div class="carousel-wrapper position-relative" style="width: 100%; overflow: hidden;">
+                  <div class="d-flex" id="mensTeamCarousel" style="transition: transform 0.3s ease; gap: 16px;">
+                      <!-- Individual Player Cards -->
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/vin.webp" class="card-img-top" alt="Vini Jr.">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#7 Vini Jr.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/mbappe.webp" class="card-img-top" alt="Mbappe">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#10 Mbappe</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/bellingham.webp" class="card-img-top" alt="Bellingham">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#5 Bellingham</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/valverde.webp" class="card-img-top" alt="Valverde">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#15 Valverde</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/camavinga.webp" class="card-img-top" alt="Camavinga">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#12 Camavinga</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/tchouameni.webp" class="card-img-top" alt="Tchouameni">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#18 Tchouameni</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/modric.webp" class="card-img-top" alt="Modric">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#10 Modric</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/courtois.webp" class="card-img-top" alt="Courtois">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#1 Courtois</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/rodrygo.webp" class="card-img-top" alt="Rodrygo">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#11 Rodrygo</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="player-card text-center" style="flex: 0 0 calc(33.333% - 16px); max-width: calc(33.333% - 16px);">
+                          <div class="card bg-light text-dark">
+                              <img src="/images/guler.webp" class="card-img-top" alt="Guler">
+                              <div class="card-body">
+                                  <p class="fw-bold m-0">#20 Guler</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Right Button -->
+              <button class="btn btn-light btn-sm ms-2" onclick="moveCarousel('right', 'mensTeam')">→</button>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<!-- JavaScript -->
+<script>
+  let currentPosition = 0;
+
+function moveCarousel(direction, team) {
+    const carousel = document.getElementById(`${team}Carousel`);
+    const cardWidth = carousel.querySelector('.player-card').offsetWidth + 16; // Include gap
+    const visibleCards = 3; // Number of cards visible at a time
+    const totalCards = carousel.children.length;
+    const maxPosition = totalCards - visibleCards;
+
+    if (direction === 'left' && currentPosition > 0) {
+        currentPosition--;
+    } else if (direction === 'right' && currentPosition < maxPosition) {
+        currentPosition++;
+    }
+
+    carousel.style.transform = `translateX(-${currentPosition * cardWidth}px)`;
+}
+
+</script>
+
+<!-- CSS -->
+<style>
+  .carousel-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+#mensTeamCarousel,
+#womensTeamCarousel {
+    display: flex;
+    transition: transform 0.3s ease;
+    gap: 16px;
+}
+
+.player-card {
+    flex: 0 0 calc(33.333% - 16px); /* Three cards visible */
+    max-width: calc(33.333% - 16px);
+}
+
+</style>
+
+
+<!-- Be Authentic Section -->
+<section id="beAuthentic" style="background-color: #102341; padding: 40px 0; color: white;">
+  <div class="container">
+      <h2 class="fw-bold text-center mb-4">Be Authentic</h2>
+
+      <!-- Kit Switcher -->
+      <div class="d-flex justify-content-center mb-4">
+          <button class="btn btn-outline-light me-2 active" onclick="switchKit('home')">Home</button>
+          <button class="btn btn-outline-light me-2" onclick="switchKit('away')">Away</button>
+          <button class="btn btn-outline-light" onclick="switchKit('third')">Third</button>
+      </div>
+
+      <!-- Kit Display -->
+      <div class="row align-items-center">
+          <!-- Left: Kit Image -->
+          <div class="col-lg-6">
+              <div class="card bg-light text-dark p-3">
+                  <div class="position-relative">
+                      <img id="mainKitImage" src="/images/home-kit.webp" class="img-fluid" alt="Kit Image">
+                      <!-- Image Switcher (below main image) -->
+                      <div class="d-flex justify-content-center mt-3">
+                          <img src="/images/home-kit-front.webp" alt="Front View" class="img-thumbnail me-2" onclick="updateKitImage('/images/home-kit-front.webp')">
+                          <img src="/images/home-kit-back.webp" alt="Back View" class="img-thumbnail me-2" onclick="updateKitImage('/images/home-kit-back.webp')">
+                          <img src="/images/home-kit-side.webp" alt="Side View" class="img-thumbnail" onclick="updateKitImage('/images/home-kit-side.webp')">
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Right: Kit Customization -->
+          <div class="col-lg-6">
+              <div class="card bg-light text-dark p-4">
+                  <h3 id="kitName" class="fw-bold">Home Kit</h3>
+                  <p class="text-primary fw-bold mb-2">$90</p>
+
+                  <!-- Size Selector -->
+                  <div class="mb-3">
+                      <label class="fw-bold">Size:</label>
+                      <div class="d-flex flex-wrap gap-2">
+                          <button class="btn btn-outline-dark btn-sm text-uppercase">XS</button>
+                          <button class="btn btn-outline-dark btn-sm text-uppercase">M</button>
+                          <button class="btn btn-outline-dark btn-sm text-uppercase">L</button>
+                          <button class="btn btn-outline-dark btn-sm text-uppercase">XL</button>
+                          <button class="btn btn-outline-dark btn-sm text-uppercase">2XL</button>
+                          <button class="btn btn-outline-dark btn-sm text-uppercase">3XL</button>
+                      </div>
+                      <a href="#" class="text-primary mt-2 d-block">Size Guide</a>
+                  </div>
+
+                  <!-- Badge Selector -->
+                  <div class="mb-3">
+                      <label class="fw-bold">Badge:</label>
+                      <select class="form-select">
+                          <option value="none">None</option>
+                          <option value="cl">Champions League Pack +$25</option>
+                          <option value="la-liga">La Liga Pack +$25</option>
+                      </select>
+                  </div>
+
+                  <!-- Name & Number Selector -->
+                  <div class="mb-3">
+                      <label class="fw-bold">Name & Number:</label>
+                      <select class="form-select" onchange="toggleCustomizationInput(this.value)">
+                          <option value="none">None</option>
+                          <option value="player">Select Player +$25</option>
+                          <option value="personalize">Personalize +$25</option>
+                      </select>
+                      <!-- Custom Input for Personalization -->
+                      <div id="customizationInput" class="mt-2 d-none">
+                          <input type="text" class="form-control mb-2" placeholder="Enter Name">
+                          <input type="number" class="form-control" placeholder="Enter Number">
+                      </div>
+                  </div>
+
+                  <!-- Add to Cart -->
+                  <div class="text-end">
+                      <button class="btn btn-primary text-uppercase fw-bold">Add to Cart</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<script>// Function to switch kits (Home, Away, Third)
+  function switchKit(kit) {
+      const kits = {
+          home: { name: "Home Kit", price: "$90", img: "/images/home-kit.webp" },
+          away: { name: "Away Kit", price: "$95", img: "/images/away-kit.webp" },
+          third: { name: "Third Kit", price: "$100", img: "/images/third-kit.webp" }
+      };
+  
+      const selectedKit = kits[kit];
+      document.getElementById("kitName").innerText = selectedKit.name;
+      document.querySelector(".text-primary").innerText = selectedKit.price;
+      document.getElementById("mainKitImage").src = selectedKit.img;
+  }
+  
+  // Function to update the main image based on thumbnail clicks
+  function updateKitImage(imageUrl) {
+      document.getElementById("mainKitImage").src = imageUrl;
+  }
+  
+  // Function to toggle customization input visibility
+  function toggleCustomizationInput(value) {
+      const customizationInput = document.getElementById("customizationInput");
+      if (value === "personalize") {
+          customizationInput.classList.remove("d-none");
+      } else {
+          customizationInput.classList.add("d-none");
+      }
+  }
+  </script>
+
+
+
+    
+
+      <!-- Best Sellers Section -->
+      <section id="bestSellers" style="background-color: #bcc4cd; padding: 40px 0;">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Best Sellers</h2>
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-3">
+                    <a href="#" class="card-link">
+                        <div class="card" style="background-color: white;">
+                            <img src="/images/best1.webp" class="card-img-top" alt="Best Seller 1">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mens Training Winter Jacket 24/25 White</h5>
+                                <p class="card-text">$99.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 2 -->
+                <div class="col-md-3">
+                    <a href="#" class="card-link">
+                        <div class="card" style="background-color: white;">
+                            <img src="/images/best2.webp" class="card-img-top" alt="Best Seller 2">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Youth Home Kit 24/25 White</h5>
+                                <br>
+                                <p class="card-text">$120.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 3 -->
+                <div class="col-md-3">
+                    <a href="#" class="card-link">
+                        <div class="card" style="background-color: white;">
+                            <img src="/images/best3.webp" class="card-img-top" alt="Best Seller 3">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Mens UCL Training All Weather Jacket 24/25 Beige</h5>
+                                <p class="card-text">$145.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+    
+                <!-- Card 4 -->
+                <div class="col-md-3">
+                    <a href="#" class="card-link">
+                        <div class="card" style="background-color: white;">
+                            <img src="/images/best4.webp" class="card-img-top" alt="Best Seller 4">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Youth Training Tracksuit 24/25 Blue/Navy</h5>
+                                <p class="card-text">$160.00</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    
+    <!-- Additional CSS for Hover Effect -->
+    <style>
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+        }
+    
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+    </style>
+        
+
+  
+      <!-- Be Authentic -->
+      <section class="authentic py-5">
+          <div class="container text-center">
+              <h2 class="fw-bold mb-4">Be Authentic</h2>
+              <p>Experience the pride of wearing Real Madrid's official merchandise.</p>
+              <img src="/images/authentic.jpg" alt="Authentic Merchandise" class="img-fluid rounded">
+          </div>
+      </section>
+  
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+          <div class="row">
+              <!-- About Section -->
+              <div class="col-md-4 mb-3">
+                  <h5 class="text-uppercase">About Real Madrid</h5>
+                  <p>
+                      The greatest club in the world with a legendary history of football excellence. Stay connected with us and be part of the journey.
+                  </p>
+              </div>
+
+              <!-- Quick Links Section -->
+              <div class="col-md-4 mb-3">
+                  <h5 class="text-uppercase">Quick Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="#" class="text-white text-decoration-none">Home</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Team</a></li>
+                      <li><a href="store.html" class="text-white text-decoration-none">Store</a></li>
+                      <li><a href="#" class="text-white text-decoration-none">Contact</a></li>
+                  </ul>
+              </div>
+
+              <!-- Social Media Section -->
+              <div class="col-md-4 mb-3">
+                  <h5 class="text-uppercase">Follow Us</h5>
+                  <ul class="list-unstyled d-flex">
+                      <li><a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a></li>
+                      <li><a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a></li>
+                      <li><a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a></li>
+                      <li><a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-12 text-center mt-3">
+                  <p class="mb-0">&copy; 2024 Real Madrid. All Rights Reserved.</p>
+              </div>
+          </div>
+      </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

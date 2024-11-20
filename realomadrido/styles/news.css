@@ -1,0 +1,22 @@
+/* Internal CSS to make the container narrower */
+.container {
+    max-width: 840px; /* You can adjust this value */
+    margin: 0 auto;   /* Centers the container */
+}
+
+/* Apply to all paragraphs */
+p {
+    font-size: 20px; /* Adjust the value as needed */
+}
+
+/* Apply roundness to image */
+img {
+    border-radius: 30px; /* Adjust the value for more or less roundness */
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    font-size: 20px;  /* Adjust text size */
+    line-height: 1.8;  /* Add space between lines */
+}
